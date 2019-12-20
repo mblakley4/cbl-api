@@ -6,6 +6,7 @@ const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
 const { CLIENT_ORIGIN } = require('./config')
 const breweriesRouter = require('./breweries/breweries-router')
+const beersRouter = require('./beers/beers-router')
 
 const app = express()
 
@@ -19,11 +20,8 @@ app.use(cors({
   origin: CLIENT_ORIGIN
 }))
 
-app.get('/api', (req, res) => {
-  res.json({ok: true, appComplete: false})
-})
-
 app.use('/api/breweries', breweriesRouter)
+app.use('/api/beers', beersRouter)
 
 app.use(function errorHandler(error, req, res, next) {
   let response
