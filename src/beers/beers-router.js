@@ -10,12 +10,12 @@ const serializeBeer = beer => ({
   id: beer.id,
   name: xss(beer.name),
   style: xss(beer.style),
-  ABV: xss(beer.ABV),
-  IBU: xss(beer.IBU),
+  abv: xss(beer.abv),
+  ibu: xss(beer.ibu),
   description: xss(beer.description),
-  beerColor: beer.beerColor,
+  beer_color: beer.beer_color,
   rating: beer.rating,
-  breweryId: beer.breweryId,
+  brewery_id: beer.brewery_id,
 })
 
 beersRouter

@@ -21,7 +21,7 @@ breweriesRouter
       req.app.get('db')
     )
     .then(breweries => {
-      res.json(breweries.map(serializeBrewery))
+      res.json(breweries)
     })
     .catch(next)
   })
