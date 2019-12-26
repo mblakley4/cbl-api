@@ -1,20 +1,30 @@
 # Craft Brew Locker API
 
+## Summary
+A web API to catalog our favorite craft beers and their associated breweries and comments.  The API contains routes to GET, POST, PATCH (update), and DELETE beers, breweries, and comments.  Each are structured in their individual tables and related with keys.
 
-## In Development...
+## Technology Used:
+  - JavaScript
+  - Node.JS w/ Express
+  - PostgreSQL
+  - Deployed on Zeit / Heroku
 
+See the Live Site: https://cbl-app.now.sh/
 
+Jump to the Client Repo: https://github.com/mblakley4/Craft-Brew-Locker-App
 
+### Sample Response Object
 
+![Response](src/Screenshots/responseObject.png)
 
-## Scripts
+### Homepage List on Client
 
-Start the application `npm start`
+![Home](src/Screenshots/homePage.png)
 
-Start nodemon for the application `npm run dev`
+### Beer Data on Client
 
-Run the tests `npm test`
+![BeerData](src/Screenshots/beerData.png)
 
-## Deploying
+### Update Brewery Form
 
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+![findBrewery](src/Screenshots/updateBrewery.png)
